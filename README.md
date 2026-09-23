@@ -1,15 +1,41 @@
+# C Systems Programming Portfolio
 
-# CSC 3320: System-Level Programming 
-This course serves as an introduction to the fundamental interactions between computer hardware and software. We explore the architecture of UNIX-family operating systems, which provide the framework for executing programs and managing files. The curriculum focuses on developing high-performance applications using the C programming language, emphasized for its efficiency, portability, and direct integration with the UNIX operating system through system calls. 
+A showcase of low-level systems programming projects in C demonstrating core operating system concepts, including process lifecycle control via POSIX system calls, dynamic memory allocation, structured data models, and input sanitization.
 
-### Key Areas of Study
-* **The UNIX Environment**: Mastery of the Command Line Interface (CLI) and shell environments for navigating directory structures and managing file systems.
-* **System Software Components**: Understanding the role of the Kernel in memory management, resource scheduling, and security.
-* **C Programming**: Utilizing the standard library for input/output, string handling, and storage allocation to build robust system applications.
-* **Automation and Scripting**: Developing shell scripts in Bash to automate complex sequences of commands and system tasks.
-* **Remote Server Management**: Learning to securely connect to instructional servers like Snowball using the SSH protocol and managing remote files via SFTP.
-* **Permissions and Security**: Managing file access through user, group, and other permissions using utilities such as chmod.
+## Portfolio Overview
 
+This repository contains three self-contained C applications designed to highlight essential systems-level programming techniques:
 
-### Projects 
+1. **POSIX Custom Shell (`posix-custom-shell`)**
+   An interactive Unix-style command-line interpreter that models concurrent process execution, parent-child process synchronization, and string tokenization.
+2. **Student Grade Management System (`grade-management-system`)**
+   A terminal-based record management application utilizing C `struct`s and dynamic memory allocation (`malloc`/`free`) to handle class rosters and statistical computations.
+3. **Crack the Code Mini-Game (`code-breaker-game`)**
+   An interactive logic mini-game built around pseudo-random number generation, array evaluation, conditional state tracking, and input sanitization.
 
+---
+
+## Technical Skills & Systems Concepts Covered
+
+* **Process Control & Execution:** Concurrent process creation (`fork`), parent synchronization (`wait`), program execution (`execvp`), and directory navigation (`chdir`).
+* **Memory Management:** Dynamic allocation and deallocation (`malloc`, `free`), memory safety, pointer manipulation, and array bounds checking.
+* **POSIX & C Standard Library:** File/stream handling, string tokenization (`strtok`), input buffering, and pseudo-random generation (`rand`, `srand`).
+* **Build Automation:** Unified shell scripting (`build.sh`) with targeted project compilation, error handling, and clean workflows.
+
+---
+
+## Repository Structure
+
+```text
+c-systems-programming-portfolio/
+├── build.sh                        # Unified build script
+├── code-breaker-game/              # Mini-game application
+│   ├── src/                        # C source code
+│   └── README.md
+├── grade-management-system/        # Grade book management system
+│   ├── src/
+│   └── README.md
+└── posix-custom-shell/             # Custom Unix shell
+    ├── src/
+    └── README.md
+```

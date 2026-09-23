@@ -1,0 +1,9 @@
+# Binaries and object files
+bin/
+*.o
+*.exe
+*.out
+
+# IDE / System files
+.vscode/
+.DS_Store
