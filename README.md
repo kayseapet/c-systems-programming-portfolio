@@ -24,6 +24,30 @@ This repository contains three self-contained C applications designed to highlig
 
 ---
 
+## How to Build & Run
+
+### Prerequisites
+* **C Compiler:** `gcc` or `clang` (with support for standard C11)
+* **Terminal Environment:** POSIX-compliant shell (Linux, macOS, or WSL on Windows)
+
+### 1. Initial Setup
+Before running the build script for the first time, make it executable:
+```bash
+chmod +x build.sh
+```
+
+### 2. Building the Projects
+* Build All Projects:`./build.sh`
+
+* Build POSIX Custom Shell:`./build.sh my-shell`
+
+* Build Grade Management System:`./build.sh grade-book`
+
+* Build Crack the Code Mini-Game:`./build.sh code-breaker`
+
+* Clean Binaries:`./build.sh clean`
+
+
 ## Repository Structure
 
 ```text

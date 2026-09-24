@@ -34,7 +34,7 @@ struct Course
 float calcAvg (float *ptr)
 {
     // we know for a fact there are only 5 grades, so we can do a loop adds each grade together and then divde by five at the end
-    float sum;
+    float sum = 0 ;
     int i;
     for(i = 0; i< 5 ; i++)
     {
@@ -100,7 +100,7 @@ void displayClass(struct Course *class, int length)
    printf("---------------------------\n");
 }
 
-int main()
+int main(void)
 {
 
     // 1. prompt user to enter the Course Name, nnumber, and total number of students in the class
@@ -112,7 +112,7 @@ int main()
         char str[50];
         printf("Enter the course name:\n :> ");
         fgets(str, sizeof(str), stdin);
-        str[50] = '\0'; // to ensure the string will end when it's supposed to.
+        str[49] = '\0'; // to ensure the string will end when it's supposed to.
         strcpy(class.courseName, str);
        
 
@@ -139,7 +139,7 @@ int main()
 
             printf("Enter Student Name:\n :> ");
             fgets((*stu).name, sizeof((*stu).name), stdin);
-            (*stu).name[50] = '\0';
+            (*stu).name[49] = '\0';
 
             //enter all five grades
             printf(" Enter Grades \n");
@@ -189,6 +189,3 @@ int main()
     printf("average grade: %.2f", stu.avgGrade);
     */
 }
-
-
-

@@ -41,7 +41,7 @@ void parse_input(char *input, char **args)
     args[i] = NULL; // Null-terminate the array of arguments
 }
 
-int main()
+int main(void)
 {
     char command[256];
     char *args[256]; // Array to hold command and arguments

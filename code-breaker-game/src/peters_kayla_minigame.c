@@ -80,7 +80,7 @@ void processTry(char *input,char *code, int digits, int* correct_right_digits, i
     }
 }
 
-int main()
+int main(void)
 {
     //1. Iniialize Difficulty Level
     int tries;
@@ -133,7 +133,7 @@ int main()
                     return 0;
                 }
             // Check if input is valid (digits long and only contains numbers)
-                if (strlen(user_input) != digits || strspn(user_input, "0123456789") != digits) 
+                if (strlen(user_input) != (size_t)digits || strspn(user_input, "0123456789") != (size_t)digits) 
                 {
                     printf("Invalid input. Please enter a %d-digit number.\n", digits);
                     continue; // ask for input again

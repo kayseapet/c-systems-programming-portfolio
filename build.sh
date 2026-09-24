@@ -34,21 +34,21 @@ build_project() {
 
 # Individual Build Functions
 build_code_breaker() {
-    build_project "code-breaker" "Crack the Code" "Crack the Code/peters_kayla_minigame.c"
+    build_project "code-breaker" "code-breaker-game" "code-breaker-game/src/peters_kayla_minigame.c"
 }
 
 build_grade_book() {
-    build_project "grade-book" "Grade Book" "Grade Book/peters_kayla_grade_management.c"
+    build_project "grade-book" "grade-management-system" "grade-management-system/src/peters_kayla_grade_management.c"
 }
 
 build_my_shell() {
-    build_project "my-shell" "My Shell" "My Shell/peters_kayla_my_shell.c"
+    build_project "my-shell" "posix-custom-shell" "posix-custom-shell/src/peters_kayla_my_shell.c"
 }
 
 # Clean Function
 clean_all() {
     echo "Cleaning all build binaries..."
-    rm -rf "Crack the Code/bin" "Grade Book/bin" "My Shell/bin"
+    rm -rf "code-breaker-game/bin" "grade-management-system/bin" "posix-custom-shell/bin"
     echo "Clean complete!"
 }
 
